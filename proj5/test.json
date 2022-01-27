@@ -1,0 +1,3455 @@
+{
+	"info": {
+		"_postman_id": "04326d2b-6319-83e8-a805-7a7cb59fe27e",
+		"name": "Project-5-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "401",
+			"item": [
+				{
+					"name": "GET /students 401",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c9baf43b-feda-4df2-937e-6b576ec6db10",
+								"exec": [
+									"pm.test(\"Status code should be 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testingasdfasdfasdf",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/students",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /grades 401",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6e22589c-d46c-4241-a0fa-e5ea9e2c344f",
+								"exec": [
+									"pm.test(\"Status code should be 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "t1g3rTester!@#123123",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/grades",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /grades/123 401",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4845892d-ce86-4846-9295-8382b9a66c20",
+								"exec": [
+									"pm.test(\"Status code should be 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "t1g3rTester!@#123123",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/grades/123",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /grades/123 401",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "41b13d14-b41b-4b54-8b4c-5cbddab3c09d",
+								"exec": [
+									"pm.test(\"Status code should be 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "t1g3rTester!@#123123",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/grades/123",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /grades/123 401",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5c4af475-b260-492e-bf71-b643e7bf6379",
+								"exec": [
+									"pm.test(\"Status code should be 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "t1g3rTester!@#123123",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/grades/123",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /grades/123 401",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "dcb1695a-081f-491a-ad29-a729a82c2436",
+								"exec": [
+									"pm.test(\"Status code should be 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "t1g3rTester!@#123123",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/grades",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /students/123 401",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "01d423f6-d6d9-420a-bc56-88e4e86ada94",
+								"exec": [
+									"pm.test(\"Status code should be 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "t1g3rTester!@#123123",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/students/123",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /students 401",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "6cc55b56-4372-4a63-a5de-600530aa3cd4",
+								"exec": [
+									"pm.test(\"Status code should be 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "t1g3rTester!@#123123",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/students",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /students/123 401",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9b9372f2-2801-4cf5-818f-05872f19233d",
+								"exec": [
+									"pm.test(\"Status code should be 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "t1g3rTester!@#123123",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/students/123",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /students/123 401",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "1c705217-9240-4a1f-9556-ca7650cb79d2",
+								"exec": [
+									"pm.test(\"Status code should be 401\", function () {",
+									"    pm.response.to.have.status(401);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "t1g3rTester!@#123123",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/students/123",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students",
+								"123"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "404",
+			"item": [
+				{
+					"name": "PUT /students 404",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "46d45b96-8e13-44f7-8f1f-679355cad45d",
+								"exec": [
+									"pm.test(\"Status code should be 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/students",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /grades/123 404",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "24e197ab-aad3-4291-ae65-852be7a47ef2",
+								"exec": [
+									"pm.test(\"Status code should be 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "{{host}}/grades/123",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades",
+								"123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /students 404",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "a4999230-1ca8-491e-8b25-e577bde4eed3",
+								"exec": [
+									"pm.test(\"Status code should be 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/students",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Student",
+			"item": [
+				{
+					"name": "Delete DB",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "02a21159-aea5-48d9-87d6-2e00e6eaa16e",
+								"exec": [
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/db",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"db"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /Students empty response",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "7eafbe97-70c9-4b5c-b9d6-910bfd6440bd",
+								"exec": [
+									"",
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"should have returned []\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.length).to.eql(0);",
+									"});",
+									"",
+									"pm.test(\"should have returned X-Total-Count\",function(){",
+									"    pm.response.to.have.header(\"X-Total-Count\");",
+									"})",
+									"",
+									"pm.test(\"X-Total-Count should be 0\",function(){",
+									"    pm.expect(postman.getResponseHeader(\"X-Total-Count\")).to.eql(\"0\");",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/students",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /students no body",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "97dbaed8-f89c-43a8-ad24-60b079c638d9",
+								"exec": [
+									"pm.test(\"Status code should be 400\", function () {",
+									"    pm.response.to.have.status(400);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/students",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /students no name",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9d3e729b-24b3-4d3a-bfa7-0845ab2d901f",
+								"exec": [
+									"pm.test(\"Status code should be 400\", function () {",
+									"    pm.response.to.have.status(400);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"craigb\"}"
+						},
+						"url": {
+							"raw": "{{host}}/students",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /students no username",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2149fb8f-3f9d-4867-8bd6-384d89de95c1",
+								"exec": [
+									"pm.test(\"Status code should be 400\", function () {",
+									"    pm.response.to.have.status(400);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"craigb\"}"
+						},
+						"url": {
+							"raw": "{{host}}/students",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /students create craigb",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "70a4a6a7-251c-4856-97ba-c9d22e289220",
+								"exec": [
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response should have _ref: /students/craigb\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData['_ref']).to.eql(\"/students/craigb\");",
+									"});",
+									"",
+									"pm.test(\"Response should have id: craigb\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData['id']).to.eql(\"craigb\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"craigb\", \"name\":\"Craig Baker\"}"
+						},
+						"url": {
+							"raw": "{{host}}/students",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /students create cbaker",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "93327650-0dd2-4a4b-bbab-5838b46444c0",
+								"exec": [
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response should have _ref: /students/cbaker\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData['_ref']).to.eql(\"/students/cbaker\");",
+									"});",
+									"",
+									"pm.test(\"Response should have id: cbaker\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData['id']).to.eql(\"cbaker\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"cbaker\", \"name\":\"Greg baker\"}"
+						},
+						"url": {
+							"raw": "{{host}}/students",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /students username in use",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2ee8a875-3e9d-449c-b492-1009b0f9d19c",
+								"exec": [
+									"pm.test(\"Status code should be 400\", function () {",
+									"    pm.response.to.have.status(400);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"craigb\", \"name\":\"craig baker\"}"
+						},
+						"url": {
+							"raw": "{{host}}/students",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /students looking for craigb",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b5e774af-7acd-4c4c-a6f1-1c4e8bdb0fdc",
+								"exec": [
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"should contain an object with id: craigb\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    var user = false;",
+									"    for(var i=0;i<jsonData.length;i++){",
+									"        if(jsonData[i].id == 'craigb'){",
+									"            user = jsonData[i];",
+									"        }",
+									"    }",
+									"    pm.expect(user.id).to.eql('craigb');",
+									"});",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"craigb\", \"name\":\"craig baker\"}"
+						},
+						"url": {
+							"raw": "{{host}}/students",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /students filter by name",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b5e774af-7acd-4c4c-a6f1-1c4e8bdb0fdc",
+								"exec": [
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"should contain an object with name: Craig Baker\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    var user = false;",
+									"    for(var i=0;i<jsonData.length;i++){",
+									"        if(jsonData[i].id == 'craigb'){",
+									"            user = jsonData[i];",
+									"        }",
+									"    }",
+									"    pm.expect(user.name).to.eql('Craig Baker');",
+									"});",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"craigb\", \"name\":\"craig baker\"}"
+						},
+						"url": {
+							"raw": "{{host}}/students?name=cra",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "cra"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /students sort by name",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b5e774af-7acd-4c4c-a6f1-1c4e8bdb0fdc",
+								"exec": [
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"first item should be id: craigb\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    ",
+									"    pm.expect(jsonData[0].id).to.eql('craigb');",
+									"});",
+									"",
+									"pm.test(\"second item should be id: cbaker\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    ",
+									"    pm.expect(jsonData[1].id).to.eql('cbaker');",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"craigb\", \"name\":\"craig baker\"}"
+						},
+						"url": {
+							"raw": "{{host}}/students?_sort=name",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students"
+							],
+							"query": [
+								{
+									"key": "_sort",
+									"value": "name"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /students sort by name desc",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b5e774af-7acd-4c4c-a6f1-1c4e8bdb0fdc",
+								"exec": [
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"first item should be id: cbaker\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    ",
+									"    pm.expect(jsonData[0].id).to.eql('cbaker');",
+									"});",
+									"",
+									"pm.test(\"second item should be id: craigb\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    ",
+									"    pm.expect(jsonData[1].id).to.eql('craigb');",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"craigb\", \"name\":\"craig baker\"}"
+						},
+						"url": {
+							"raw": "{{host}}/students?_sort=name&_order=desc",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students"
+							],
+							"query": [
+								{
+									"key": "_sort",
+									"value": "name"
+								},
+								{
+									"key": "_order",
+									"value": "desc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /students with pages",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b5e774af-7acd-4c4c-a6f1-1c4e8bdb0fdc",
+								"exec": [
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"first item should be id: cbaker\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    ",
+									"    pm.expect(jsonData[0].id).to.eql('cbaker');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"craigb\", \"name\":\"craig baker\"}"
+						},
+						"url": {
+							"raw": "{{host}}/students?_sort=name&_order=desc&_start=0&_end=1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students"
+							],
+							"query": [
+								{
+									"key": "_sort",
+									"value": "name"
+								},
+								{
+									"key": "_order",
+									"value": "desc"
+								},
+								{
+									"key": "_start",
+									"value": "0"
+								},
+								{
+									"key": "_end",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /students with pages 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b5e774af-7acd-4c4c-a6f1-1c4e8bdb0fdc",
+								"exec": [
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"first item should be id: craigb\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    ",
+									"    pm.expect(jsonData[0].id).to.eql('craigb');",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"craigb\", \"name\":\"craig baker\"}"
+						},
+						"url": {
+							"raw": "{{host}}/students?_sort=name&_order=desc&_start=1&_end=2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students"
+							],
+							"query": [
+								{
+									"key": "_sort",
+									"value": "name"
+								},
+								{
+									"key": "_order",
+									"value": "desc"
+								},
+								{
+									"key": "_start",
+									"value": "1"
+								},
+								{
+									"key": "_end",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /students/craigb",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c83949bc-fff0-4a44-b84e-9c5872172c9b",
+								"exec": [
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response should have _ref: /students/craigb\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData['_ref']).to.eql(\"/students/craigb\");",
+									"});",
+									"",
+									"pm.test(\"Response should have id: craigb\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData['id']).to.eql(\"craigb\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"craigb\", \"name\":\"craig baker\"}"
+						},
+						"url": {
+							"raw": "{{host}}/students/craigb",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students",
+								"craigb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /students/craigb",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "cccacb9f-f192-42bd-a0d5-9458d492af8c",
+								"exec": [
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/students/craigb",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students",
+								"craigb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /students/craigb 404",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e261dc2f-7195-4d69-95d4-edf16299ff77",
+								"exec": [
+									"pm.test(\"Status code should be 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"craigb\", \"name\":\"craig baker\"}"
+						},
+						"url": {
+							"raw": "{{host}}/students/craigb",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students",
+								"craigb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /students/cbaker name",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "3d4c034c-f55c-4a72-9297-92210d99f34e",
+								"exec": [
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"name\":\"Craig Baker\"}"
+						},
+						"url": {
+							"raw": "{{host}}/students/cbaker",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students",
+								"cbaker"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /students/cbaker username",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "9eeb1554-89d7-4936-b1df-559890a73855",
+								"exec": [
+									"pm.test(\"Status code should be 400\", function () {",
+									"    pm.response.to.have.status(400);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"id\":\"craigb\", \"name\":\"craig baker\"}"
+						},
+						"url": {
+							"raw": "{{host}}/students/cbaker",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students",
+								"cbaker"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /students/cbaker check name change",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "59f6429d-fb8a-4270-a180-23b6c46843ec",
+								"exec": [
+									"pm.test(\"Status code should 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response should have name: Craig Baker\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.name).to.eql('Craig Baker');",
+									"});",
+									"",
+									"",
+									"pm.test(\"Response should have _ref: /students/cbaker\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData['_ref']).to.eql(\"/students/cbaker\");",
+									"});",
+									"",
+									"pm.test(\"Response should have id: cbaker\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData['id']).to.eql(\"cbaker\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"username\":\"craigb\", \"name\":\"craig baker\"}"
+						},
+						"url": {
+							"raw": "{{host}}/students/cbaker",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"students",
+								"cbaker"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Grade",
+			"item": [
+				{
+					"name": "GET /grades is empty",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "87ad8f4e-bfa9-4927-8ec1-6adec8c51433",
+								"exec": [
+									"",
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"should have returned []\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.length).to.eql(0);",
+									"});",
+									"",
+									"pm.test(\"should have returned X-Total-Count\",function(){",
+									"    pm.response.to.have.header(\"X-Total-Count\");",
+									"})",
+									"",
+									"pm.test(\"X-Total-Count should be 0\",function(){",
+									"    pm.expect(postman.getResponseHeader(\"X-Total-Count\")).to.eql(\"0\");",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/grades",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /grades quiz1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "248bb6a2-bd77-419f-9a58-a4d90fd71c2f",
+								"exec": [
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response should have _ref: /grades/1\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData['_ref']).to.eql(\"/grades/1\");",
+									"});",
+									"",
+									"pm.test(\"Response should have id: 1\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData['id']).to.eql(\"1\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"type\": \"quiz\",\n\t\"student_id\":\"cbaker\",\n\t\"grade\": 10,\n\t\"max\": 10\n}"
+						},
+						"url": {
+							"raw": "{{host}}/grades",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /grades quiz2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "614f7d7c-d693-4e22-a012-d1a81007ad30",
+								"exec": [
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response should have _ref: /grades/2\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData['_ref']).to.eql(\"/grades/2\");",
+									"});",
+									"",
+									"pm.test(\"Response should have id: 2\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData['id']).to.eql(\"2\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"type\": \"quiz\",\n\t\"student_id\":\"cbaker\",\n\t\"grade\": 1,\n\t\"max\": 10\n}"
+						},
+						"url": {
+							"raw": "{{host}}/grades",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /grades quiz3",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c0ec6054-ce00-4b2b-92ee-28b9471936fd",
+								"exec": [
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response should have _ref: /grades/3\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData['_ref']).to.eql(\"/grades/3\");",
+									"});",
+									"",
+									"pm.test(\"Response should have id: 3\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData['id']).to.eql(\"3\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"type\": \"quiz\",\n\t\"student_id\":\"cbaker\",\n\t\"grade\": 12,\n\t\"max\": 10\n}"
+						},
+						"url": {
+							"raw": "{{host}}/grades",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /grades test1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c302b80f-066d-4120-8019-9886dbb6363c",
+								"exec": [
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response should have _ref: /grades/4\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData['_ref']).to.eql(\"/grades/4\");",
+									"});",
+									"",
+									"pm.test(\"Response should have id: 4\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData['id']).to.eql(\"4\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"type\": \"test\",\n\t\"student_id\":\"cbaker\",\n\t\"grade\": 122,\n\t\"max\": 100\n}"
+						},
+						"url": {
+							"raw": "{{host}}/grades",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST /grades test1 craigb",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e156189c-09c9-4480-87f5-af33d848267a",
+								"exec": [
+									"pm.test(\"Status code should 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response should have _ref: /grades/5\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData['_ref']).to.eql(\"/grades/5\");",
+									"});",
+									"",
+									"pm.test(\"Response should have id: 5\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData['id']).to.eql(\"5\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"type\": \"test\",\n\t\"student_id\":\"craigb\",\n\t\"grade\": 122,\n\t\"max\": 100\n}"
+						},
+						"url": {
+							"raw": "{{host}}/grades",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT /grades/4 111",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5a402e4f-7dc0-4a41-ad9e-0f881650a07a",
+								"exec": [
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"grade\":111}"
+						},
+						"url": {
+							"raw": "{{host}}/grades/4",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /grades/4 grade 111",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "05371c38-44f3-475f-973b-94c96e9cce65",
+								"exec": [
+									"tests['Status code should be 200'] = responseCode.code === 200;",
+									"var data = JSON.parse(responseBody);",
+									"tests['grade should be 111'] = data.grade === \"111\" || data.grade === 111;"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/grades/4",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /grades is len 5",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "31095a23-aad6-402a-a5cf-9a066e3408b9",
+								"exec": [
+									"",
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"should be 5 results\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.length).to.eql(5);",
+									"});",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/grades",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /grades by type is len 3",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b598ae01-d7a3-4dc5-bc68-0c6c02d69c4e",
+								"exec": [
+									"",
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"should be 3 results\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.length).to.eql(3);",
+									"});",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/grades?type=quiz",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "quiz"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /grades by username is len 4",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4be90d2d-bbe7-4fb1-a11c-c6a166715b10",
+								"exec": [
+									"",
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"should be 4 results\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.length).to.eql(4);",
+									"});",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/grades?student_id=cbaker",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades"
+							],
+							"query": [
+								{
+									"key": "student_id",
+									"value": "cbaker"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /grades by username sorted by max",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4be90d2d-bbe7-4fb1-a11c-c6a166715b10",
+								"exec": [
+									"",
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"should be 4 results\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.length).to.eql(4);",
+									"});",
+									"",
+									"pm.test(\"last item should have max 100\", function(){",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData[3].max).to.eql(\"100\"); ",
+									"})",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/grades?student_id=cbaker&_sort=max",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades"
+							],
+							"query": [
+								{
+									"key": "student_id",
+									"value": "cbaker"
+								},
+								{
+									"key": "_sort",
+									"value": "max"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /grades by username sorted by max desc",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "4be90d2d-bbe7-4fb1-a11c-c6a166715b10",
+								"exec": [
+									"",
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"should be 4 results\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.length).to.eql(4);",
+									"});",
+									"",
+									"pm.test(\"first item should have max 100\", function(){",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData[0].max).to.eql(\"100\"); ",
+									"})",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/grades?student_id=cbaker&_sort=max&_order=desc",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades"
+							],
+							"query": [
+								{
+									"key": "student_id",
+									"value": "cbaker"
+								},
+								{
+									"key": "_sort",
+									"value": "max"
+								},
+								{
+									"key": "_order",
+									"value": "desc"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /grades by username and type",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "8f51e87a-6a38-4cb4-b5d4-e8bfc9055f70",
+								"exec": [
+									"",
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"should be 1 result\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.length).to.eql(1);",
+									"});",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/grades?student_id=cbaker&type=test",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades"
+							],
+							"query": [
+								{
+									"key": "student_id",
+									"value": "cbaker"
+								},
+								{
+									"key": "type",
+									"value": "test"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /grades/4",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "e9fb2b51-4edb-4bf2-ba78-a98936e21506",
+								"exec": [
+									"",
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/grades/4",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE /grades/4 404",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "c1ba04e3-2d98-470b-978d-c4189b1ec430",
+								"exec": [
+									"",
+									"pm.test(\"Status code should be 404\", function () {",
+									"    pm.response.to.have.status(404);",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/grades/4",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET /grades is len 4",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "01de7ca3-b2c4-4ba1-a7d5-ae49065ed04e",
+								"exec": [
+									"",
+									"pm.test(\"Status code should be 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"should be 4 results\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.length).to.eql(4);",
+									"});",
+									"",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "testing",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "teacher",
+									"type": "string"
+								},
+								{
+									"key": "saveHelperData",
+									"type": "any"
+								},
+								{
+									"key": "showPassword",
+									"value": false,
+									"type": "boolean"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{host}}/grades",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"grades"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

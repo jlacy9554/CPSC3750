@@ -1,0 +1,2 @@
+shh -i aws_personal_east.pem ubuntu@54.221.164.52
+54.221.164.52
